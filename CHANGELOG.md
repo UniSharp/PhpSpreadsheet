@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com)
 and this project adheres to [Semantic Versioning](https://semver.org).
 
+## [Unreleased]
+
+### Added
+
+- Refactored Matrix Functions to use external Matrix library
+
+### Fixed
+
+- Improve XLSX parsing speed if no readFilter is applied - [#772](https://github.com/PHPOffice/PhpSpreadsheet/issues/772)
+
 ## [1.5.2] - 2018-11-25
 
 ### Security
@@ -105,7 +115,7 @@ and this project adheres to [Semantic Versioning](https://semver.org).
     - IMSEC()         Returns the secant of a complex number
     - IMSECH()        Returns the hyperbolic secant of a complex number
     - IMSINH()        Returns the hyperbolic sine of a complex number
-    - IMTAN()         Returns the tangent of a complex number 
+    - IMTAN()         Returns the tangent of a complex number
 
 ### Fixed
 
