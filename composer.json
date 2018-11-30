@@ -75,12 +75,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+            "UniSharp\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PhpOffice\\PhpSpreadsheetTests\\": "tests/PhpSpreadsheetTests"
+            "UniSharp\\PhpSpreadsheetTests\\": "tests/PhpSpreadsheetTests"
         }
     }
 }
