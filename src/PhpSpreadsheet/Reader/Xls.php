@@ -7899,7 +7899,15 @@ class Xls extends BaseReader
      */
     public static function getUInt2d($data, $pos)
     {
-        return ord($data[$pos]) | (ord($data[$pos + 1]) << 8);
+        if (isset($data[$pos]) && isset($data[$pos + 1])) {
+            return ord($data[$pos]) | (ord($data[$pos + 1]) << 8);
+        }
+
+        if (isset($data[$pos])) {
+            return ord($data[$pos]);
+        }
+
+        return 0;
     }
 
     /**
